@@ -45,11 +45,11 @@ class AuthenticatedSessionController extends Controller
             
             // REDIRECT LANGSUNG KE URL
             if ($user->role == 'admin') {
-                return redirect('http://127.0.0.1:8000/dashboard/admin');
+                return redirect('dashboard/admin');
             } elseif ($user->role == 'petugas') {
-                return redirect('http://127.0.0.1:8000/dashboard/petugas');
+                return redirect('dashboard/petugas');
             } elseif ($user->role == 'owner') {
-                return redirect('http://127.0.0.1:8000/dashboard/owner');
+                return redirect('dashboard/owner');
             }
         }
 
